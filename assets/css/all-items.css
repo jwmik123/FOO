@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700,900italic);
+.header {
+  background: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  font-family: "Raleway", sans-serif; }
+  .header #page-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 100px;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    text-decoration: none; }
+  .header #page-title-slogan {
+    margin-top: 0;
+    margin-bottom: -15px;
+    margin-left: 100px;
+    font-weight: 300;
+    font-size: 15px;
+    color: white; }
+  .header .navigation {
+    float: right;
+    margin-top: -35px;
+    margin-right: 50px; }
+    .header .navigation ul {
+      background-color: black;
+      color: white; }
+      .header .navigation ul li {
+        text-decoration: none;
+        display: inline-block;
+        padding-right: 50px; }
+      .header .navigation ul #mag {
+        margin-left: -40px;
+        margin-bottom: 10px; }
+      .header .navigation ul .search {
+        background-color: black;
+        border: none;
+        border-bottom: 1px solid white;
+        color: white;
+        font-size: 16px; }
+        .header .navigation ul .search:focus {
+          outline: 0; }
+      .header .navigation ul a {
+        color: white; }
+
+.products {
+  margin-top: 150px;
+  background-color: red;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: "Raleway", sans-serif; }
+  .products #object {
+    visibility: hidden; }
+  .products .product-thumbnail {
+    left: 0%;
+    display: block;
+    background-size: cover;
+    border: 2px solid lightgrey;
+    width: 350px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    float: left;
+    border-radius: 0;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden; }
+    .products .product-thumbnail:after {
+      content: "";
+      display: block;
+      padding-top: 100%; }
+    .products .product-thumbnail:hover {
+      left: 0%; }
+    .products .product-thumbnail .product-meta {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.8);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 0;
+      color: white;
+      padding-top: 180px;
+      padding-left: 20px;
+      transform: translate(0%, 100%) scale(0.5);
+      transition: all 200ms ease-in-out;
+      opacity: 0; }
+      .products .product-thumbnail .product-meta .name {
+        font-size: 28px;
+        width: 200px; }
+      .products .product-thumbnail .product-meta .date {
+        font-style: italic;
+        font-size: 20;
+        padding-bottom: 15px; }
+      .products .product-thumbnail .product-meta .fi-shopping-cart {
+        float: right;
+        font-size: 24px;
+        margin-right: 50px;
+        margin-top: -10px; }
+      .products .product-thumbnail .product-meta hr {
+        width: 20px;
+        margin-bottom: -10px;
+        float: left; }
+  .products .product-thumbnail:hover .product-meta {
+    opacity: 1;
+    transform: translate(0%, 0%) scale(1); }
+
+.footer {
+  background-color: black;
+  color: white; }

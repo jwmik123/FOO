@@ -1,0 +1,352 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700,900italic);
+.header {
+  background: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2; }
+  .header #page-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 100px;
+    font-weight: 700;
+    font-size: 30px;
+    color: white; }
+  .header #page-title-slogan {
+    margin-top: 0;
+    margin-bottom: -15px;
+    margin-left: 100px;
+    font-weight: 300;
+    font-size: 15px;
+    color: white; }
+  .header .navigation {
+    float: right;
+    margin-top: -35px;
+    margin-right: 50px; }
+    .header .navigation ul {
+      background-color: black;
+      color: white; }
+      .header .navigation ul li {
+        text-decoration: none;
+        display: inline-block;
+        padding-right: 50px; }
+      .header .navigation ul #mag {
+        margin-left: -40px;
+        margin-bottom: 10px; }
+      .header .navigation ul .search {
+        background-color: black;
+        border: none;
+        border-bottom: 1px solid white;
+        color: white;
+        font-size: 16px; }
+        .header .navigation ul .search:focus {
+          outline: 0; }
+      .header .navigation ul a {
+        color: white; }
+
+a {
+  text-decoration: none; }
+
+.highlight-items {
+  padding: 100px;
+  margin-top: 20px;
+  background-color: lightgrey; }
+  .highlight-items .product-1 {
+    display: none;
+    background-image: url(../images/nike.jpg);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: right;
+    padding: 5px 20px 20px 20px;
+    margin-bottom: 30px;
+    height: 400px;
+    min-width: 900px;
+    box-shadow: 10px 10px 10px black;
+    overflow: hidden;
+    visibility: hidden; }
+    .highlight-items .product-1 p {
+      width: 70%;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      padding: 10px; }
+    .highlight-items .product-1 a {
+      float: right;
+      margin-top: 110px;
+      margin-right: 20px;
+      padding: 15px;
+      text-decoration: none;
+      background-color: black;
+      color: white;
+      opacity: 0.7; }
+      .highlight-items .product-1 a:hover {
+        opacity: 1;
+        text-decoration: none; }
+  .highlight-items .show {
+    display: block; }
+  .highlight-items .product-2 {
+    background-image: url(../images/adidas.jpg);
+    background-color: white;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 5px 20px 20px 20px;
+    margin-bottom: 30px;
+    height: 400px;
+    min-width: 900px;
+    box-shadow: 10px 10px 10px black;
+    overflow: hidden;
+    visibility: hidden; }
+    .highlight-items .product-2 p {
+      width: 70%;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      padding: 10px; }
+    .highlight-items .product-2 a {
+      float: right;
+      margin-top: 110px;
+      margin-right: 20px;
+      padding: 15px;
+      text-decoration: none;
+      background-color: black;
+      color: white;
+      opacity: 0.7; }
+      .highlight-items .product-2 a:hover {
+        opacity: 1;
+        text-decoration: none; }
+  .highlight-items .product-3 {
+    background-image: url(../images/asics.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #e9e8e4;
+    box-shadow: 10px 10px 10px black;
+    overflow: hidden;
+    visibility: hidden;
+    padding: 5px 20px 20px 20px;
+    margin-bottom: 20px;
+    height: 400px;
+    min-width: 900px; }
+    .highlight-items .product-3 p {
+      width: 70%;
+      text-align: left;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      padding: 10px; }
+    .highlight-items .product-3 a {
+      float: right;
+      margin-top: 100px;
+      margin-right: 20px;
+      padding: 15px;
+      text-decoration: none;
+      background-color: black;
+      color: white;
+      opacity: 0.7; }
+      .highlight-items .product-3 a:hover {
+        opacity: 1;
+        text-decoration: none; }
+
+.background .products {
+  margin-top: 150px;
+  display: none;
+  background-color: red;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  .background .products .product-thumbnail {
+    left: 0%;
+    display: block;
+    background-size: cover;
+    border: 2px solid lightgrey;
+    width: 350px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    float: left;
+    border-radius: 0;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden; }
+    .background .products .product-thumbnail:after {
+      content: "";
+      display: block;
+      padding-top: 100%; }
+    .background .products .product-thumbnail:hover {
+      left: 0%; }
+    .background .products .product-thumbnail .product-meta {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.8);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 0;
+      color: white;
+      padding-top: 180px;
+      padding-left: 20px;
+      transform: translate(0%, 100%) scale(0.5);
+      transition: all 200ms ease-in-out;
+      opacity: 0; }
+      .background .products .product-thumbnail .product-meta .name {
+        font-size: 28px;
+        width: 200px; }
+      .background .products .product-thumbnail .product-meta .date {
+        font-style: italic;
+        font-size: 20;
+        padding-bottom: 15px; }
+      .background .products .product-thumbnail .product-meta .fi-shopping-cart {
+        float: right;
+        font-size: 24px;
+        margin-right: 50px;
+        margin-top: -10px; }
+      .background .products .product-thumbnail .product-meta hr {
+        width: 20px;
+        margin-bottom: -10px;
+        float: left; }
+  .background .products .product-thumbnail:hover .product-meta {
+    opacity: 1;
+    transform: translate(0%, 0%) scale(1); }
+.background .remove {
+  display: block; }
+.background .products1 {
+  margin-top: 150px;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  .background .products1 .product-thumbnail1 {
+    left: 0%;
+    display: flex;
+    background-size: cover;
+    border: 2px solid lightgrey;
+    width: 350px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    float: left;
+    border-radius: 0;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden; }
+    .background .products1 .product-thumbnail1:after {
+      content: "";
+      display: block;
+      padding-top: 100%; }
+    .background .products1 .product-thumbnail1:hover {
+      left: 0%; }
+    .background .products1 .product-thumbnail1 .product-meta1 {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.8);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 0;
+      color: white;
+      padding-top: 180px;
+      padding-left: 20px;
+      transform: translate(0%, 100%) scale(0.5);
+      transition: all 200ms ease-in-out;
+      opacity: 0; }
+      .background .products1 .product-thumbnail1 .product-meta1 .name {
+        font-size: 28px;
+        width: 200px; }
+      .background .products1 .product-thumbnail1 .product-meta1 .date {
+        font-style: italic;
+        font-size: 20;
+        padding-bottom: 15px; }
+      .background .products1 .product-thumbnail1 .product-meta1 .fi-shopping-cart {
+        float: right;
+        font-size: 24px;
+        margin-right: 50px;
+        margin-top: -10px; }
+      .background .products1 .product-thumbnail1 .product-meta1 hr {
+        width: 20px;
+        margin-bottom: -10px;
+        float: left; }
+  .background .products1 .product-thumbnail1:hover .product-meta1 {
+    opacity: 1;
+    transform: translate(0%, 0%) scale(1); }
+.background .remove1 {
+  display: block; }
+.background .products2 {
+  margin-top: 150px;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  .background .products2 .product-thumbnail2 {
+    left: 0%;
+    display: flex;
+    background-size: cover;
+    border: 2px solid lightgrey;
+    width: 350px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    float: left;
+    border-radius: 0;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden; }
+    .background .products2 .product-thumbnail2:after {
+      content: "";
+      display: block;
+      padding-top: 100%; }
+    .background .products2 .product-thumbnail2:hover {
+      left: 0%; }
+    .background .products2 .product-thumbnail2 .product-meta2 {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.8);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 0;
+      color: white;
+      padding-top: 180px;
+      padding-left: 20px;
+      transform: translate(0%, 100%) scale(0.5);
+      transition: all 200ms ease-in-out;
+      opacity: 0; }
+      .background .products2 .product-thumbnail2 .product-meta2 .name {
+        font-size: 28px;
+        width: 200px; }
+      .background .products2 .product-thumbnail2 .product-meta2 .date {
+        font-style: italic;
+        font-size: 20;
+        padding-bottom: 15px; }
+      .background .products2 .product-thumbnail2 .product-meta2 .fi-shopping-cart {
+        float: right;
+        font-size: 24px;
+        margin-right: 50px;
+        margin-top: -10px; }
+      .background .products2 .product-thumbnail2 .product-meta2 hr {
+        width: 20px;
+        margin-bottom: -10px;
+        float: left; }
+  .background .products2 .product-thumbnail2:hover .product-meta1 {
+    opacity: 1;
+    transform: translate(0%, 0%) scale(1); }
+.background .remove2 {
+  display: block; }
+
+.footer {
+  background-color: black;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  max-height: 200px;
+  text-align: center; }
+
+.removeFooter {
+  display: none; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif; }

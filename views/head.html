@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>- Shoe Store -</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/css/foundation-icons/foundation-icons.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css" media="screen"  charset="utf-8">
+    <link rel="stylesheet" href="assets/css/search.css" media="screen"  charset="utf-8">
+    <script src="assets/js/search.js" charset="utf-8"></script>
+    <script>
+function showUser(str) {
+    if (str == "") {
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else {
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("search-results").innerHTML = xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("GET","logic/search.php?q="+str,true);
+        xmlhttp.send();
+    }
+}
+</script>
+</head>
+<body>
